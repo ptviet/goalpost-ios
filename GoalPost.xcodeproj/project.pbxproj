@@ -14,10 +14,12 @@
 		4B16BB55215097AF0032E535 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B16BB54215097AF0032E535 /* Assets.xcassets */; };
 		4B16BB58215097AF0032E535 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B16BB56215097AF0032E535 /* LaunchScreen.storyboard */; };
 		4B16BB642150A0450032E535 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B16BB632150A0450032E535 /* GoalCell.swift */; };
-		4B16BB662150ACEA0032E535 /* GoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B16BB652150ACEA0032E535 /* GoalVC.swift */; };
+		4B16BB662150ACEA0032E535 /* GoalVCExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B16BB652150ACEA0032E535 /* GoalVCExt.swift */; };
 		4B16BB682150AE5B0032E535 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B16BB672150AE5B0032E535 /* GoalType.swift */; };
 		4B16BB6A2150B4880032E535 /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B16BB692150B4880032E535 /* CreateGoalVC.swift */; };
 		4B16BB6C2150B8420032E535 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B16BB6B2150B8420032E535 /* UIViewControllerExt.swift */; };
+		4B5128BE2150BD4A00AEA712 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5128BD2150BD4A00AEA712 /* UIViewExt.swift */; };
+		4B5128C02150C1BC00AEA712 /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5128BF2150C1BC00AEA712 /* UIButtonExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +32,12 @@
 		4B16BB57215097AF0032E535 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B16BB59215097AF0032E535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B16BB632150A0450032E535 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
-		4B16BB652150ACEA0032E535 /* GoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalVC.swift; sourceTree = "<group>"; };
+		4B16BB652150ACEA0032E535 /* GoalVCExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalVCExt.swift; sourceTree = "<group>"; };
 		4B16BB672150AE5B0032E535 /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
 		4B16BB692150B4880032E535 /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
 		4B16BB6B2150B8420032E535 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		4B5128BD2150BD4A00AEA712 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		4B5128BF2150C1BC00AEA712 /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +112,10 @@
 		4B16BB62215098860032E535 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				4B16BB652150ACEA0032E535 /* GoalVC.swift */,
+				4B16BB652150ACEA0032E535 /* GoalVCExt.swift */,
 				4B16BB6B2150B8420032E535 /* UIViewControllerExt.swift */,
+				4B5128BD2150BD4A00AEA712 /* UIViewExt.swift */,
+				4B5128BF2150C1BC00AEA712 /* UIButtonExt.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -185,7 +191,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B16BB662150ACEA0032E535 /* GoalVC.swift in Sources */,
+				4B5128BE2150BD4A00AEA712 /* UIViewExt.swift in Sources */,
+				4B5128C02150C1BC00AEA712 /* UIButtonExt.swift in Sources */,
+				4B16BB662150ACEA0032E535 /* GoalVCExt.swift in Sources */,
 				4B16BB642150A0450032E535 /* GoalCell.swift in Sources */,
 				4B16BB6C2150B8420032E535 /* UIViewControllerExt.swift in Sources */,
 				4B16BB682150AE5B0032E535 /* GoalType.swift in Sources */,

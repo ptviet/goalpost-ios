@@ -12,7 +12,7 @@
         <!--GoalVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="GoalVC" customModule="GoalPost" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="goalVC" id="BYZ-38-t0r" customClass="GoalVC" customModule="GoalPost" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,7 +42,6 @@
                                         <state key="normal" image="addGoal"/>
                                         <connections>
                                             <action selector="onAddGoalBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BNF-PQ-7Ry"/>
-                                            <segue destination="ZxX-9Z-Voe" kind="presentation" id="aIk-WY-IBU"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -176,7 +175,7 @@
         <!--Create GoalVC-->
         <scene sceneID="gO8-LO-Sbq">
             <objects>
-                <viewController id="ZxX-9Z-Voe" customClass="CreateGoalVC" customModule="GoalPost" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="createGoalVC" id="ZxX-9Z-Voe" customClass="CreateGoalVC" customModule="GoalPost" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xdZ-UT-AAd" customClass="Create">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -270,10 +269,10 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USb-Eu-p6u">
-                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="597" width="375" height="70"/>
                                 <color key="backgroundColor" red="0.42745098040000001" green="0.73725490199999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="cw7-fg-fBZ"/>
+                                    <constraint firstAttribute="height" constant="70" id="cw7-fg-fBZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                 <state key="normal" title="NEXT">
@@ -286,7 +285,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="USb-Eu-p6u" firstAttribute="bottom" secondItem="fG1-yL-y9s" secondAttribute="bottom" id="7fl-wf-m1U"/>
+                            <constraint firstItem="USb-Eu-p6u" firstAttribute="bottom" secondItem="xdZ-UT-AAd" secondAttribute="bottom" id="7fl-wf-m1U"/>
                             <constraint firstItem="LA2-OA-wnV" firstAttribute="leading" secondItem="fG1-yL-y9s" secondAttribute="leading" id="BpN-5p-z55"/>
                             <constraint firstItem="LA2-OA-wnV" firstAttribute="top" secondItem="xdZ-UT-AAd" secondAttribute="top" id="FF2-cj-wkU"/>
                             <constraint firstItem="USb-Eu-p6u" firstAttribute="leading" secondItem="fG1-yL-y9s" secondAttribute="leading" id="GZO-vQ-jUK"/>
@@ -307,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1bR-z4-74F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="812" y="23.838080959520241"/>
+            <point key="canvasLocation" x="793" y="25"/>
         </scene>
     </scenes>
     <resources>
