@@ -1,8 +1,9 @@
 
 import UIKit
 
-class CreateGoalVC: UIViewController {
+class CreateGoalVC: UIViewController, UITextViewDelegate {
   
+  // Outlets
   @IBOutlet weak var goalTxtView: UITextView!
   @IBOutlet weak var shortTermBtn: UIButton!
   @IBOutlet weak var longTermBtn: UIButton!
@@ -19,6 +20,7 @@ class CreateGoalVC: UIViewController {
     nextBtn.bindToKeyboard()
     shortTermBtn.setSelectedColor()
     longTermBtn.setDeselectedColor()
+    goalTxtView.delegate = self
   }
   
   @objc func toggleKeyboard() {
@@ -39,10 +41,24 @@ class CreateGoalVC: UIViewController {
   
   @IBAction func onNextBtnPressed(_ sender: Any) {
     
+    if goalTxtView.text != "" && goalTxtView.text != "..." {
+      guard let finishGoalVC = storyboard?.instantiateViewController(withIdentifier: "finishGoalVC") as? FinishGoalVC else { return }
+      finishGoalVC.initData(goalDescription: self.goalTxtView.text!, goalType: self.goalType)
+      presentDetail(finishGoalVC)
+    }
   }
+  
+  func textViewDidBeginEditing(_ textView: UITextView) {
+    if goalTxtView.text == "..." {
+      goalTxtView.text = ""
+    }
+    goalTxtView.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+  }
+  
   
   @IBAction func onBackBtnPressed(_ sender: Any) {
     dismissDetail()
   }
+  
   
 }
